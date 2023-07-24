@@ -1,6 +1,10 @@
 # expsense_tracker
 
-A new Flutter project.
+Expense tracker app created during the Udemy Flutter & Dart - The Complete Guide [2023 Edition] by Maximilian Schwarzmüller.
+
+## Screenshots
+<img width="404" alt="image" src="https://github.com/NielsLouwes/expense-tracker/assets/76694402/29b9d521-d95e-4bb2-a6c2-1e4736b0f6ca">
+<img width="407" alt="image" src="https://github.com/NielsLouwes/expense-tracker/assets/76694402/b552e687-455c-4a6d-8fbc-cb43bfd2cbdc">
 
 ## Getting Started
 
