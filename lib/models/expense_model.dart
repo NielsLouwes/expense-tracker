@@ -43,3 +43,26 @@ class Expense {
     return 'Expense(title: $title, amount: $amount, date: $date, category: $category)';
   }
 }
+
+// ExpenseBucket is for showing our graph data, which adds up all expenses of each category
+class ExpenseBucket {
+  const ExpenseBucket({required this.category, required this.expenses});
+
+  // 2nd constructor responsible for filtering per category
+  ExpenseBucket.forCategory(List<Expense> allExpenses, this.category)
+      : expenses = allExpenses
+            .where((expense) => expense.category == category)
+            .toList();
+
+  final Category category;
+  final List<Expense> expenses;
+
+  double get totalExpenses {
+    double sum = 0;
+
+    for (final expense in expenses) {
+      sum += expense.amount; // sum  = sum + expense.amount;
+    }
+    return sum;
+  }
+}

@@ -158,7 +158,6 @@ class _NewExpenseState extends State<NewExpense> {
                 onPressed: _submitExpenseData,
                 child: const Text(
                   'Save Expense',
-                  style: TextStyle(color: Colors.black),
                 ),
               ),
             ],
